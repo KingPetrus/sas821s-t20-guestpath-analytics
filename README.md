@@ -2,8 +2,8 @@
 **T20 · Hospitality Guest-System Compromise and Payment-Data Security Analytics**
 SAS821S Capstone — Namibia University of Science and Technology
 
-- **Mfon Charten Petrus** (221017984) — Data and Modelling Lead
-- **TJIRI NDJARAKANAi** (219067058 ) — Security Engineering and Intelligence Lead
+- **Mfon Charten Petrus** (221017984)-  Data and Modelling Lead
+- **TJIRI NDJARAKANAi** (219067058 )- Security Engineering and Intelligence Lead
 - Lecturer: Prof. Atlee Gamundani
 
 ## What this project does
