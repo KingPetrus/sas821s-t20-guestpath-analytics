@@ -1,0 +1,7 @@
+reservation_id,guest_name,room_number,event_time,sim_time,staff_id,action,staff_flagged_anomalous,in_attack_window
+R9000,Tanner Mitchell DDS,145,2026-08-01 08:20:10,30010,U0007,folio_update,True,True
+R9002,Megan Le,279,2026-08-01 08:20:36,30036,U0007,folio_update,True,True
+R9003,Sara Fuller,112,2026-08-01 08:20:41,30041,U0007,folio_update,True,True
+R9001,Heather Fields,229,2026-08-01 08:21:23,30083,U0007,folio_update,True,True
+R9005,Kevin Oconnor,319,2026-08-01 08:23:04,30184,U0007,folio_update,True,True
+R9004,Maria Parker,231,2026-08-01 08:23:11,30191,U0007,folio_update,True,True

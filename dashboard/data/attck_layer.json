@@ -1,0 +1,84 @@
+{
+  "name": "GuestPath Analytics - Reconstructed Attack Path",
+  "versions": {
+    "attack": "15",
+    "navigator": "4.9.1",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "Techniques observed in the reconstructed guest-Wi-Fi-to-payment attack path (T20 capstone).",
+  "filters": {
+    "platforms": [
+      "Windows",
+      "Network"
+    ]
+  },
+  "sorting": 0,
+  "layout": {
+    "layout": "side",
+    "aggregateFunction": "average",
+    "showID": true,
+    "showName": true
+  },
+  "hideDisabled": false,
+  "techniques": [
+    {
+      "techniqueID": "T1566",
+      "score": 1,
+      "color": "",
+      "comment": "Initial access via helpdesk social engineering | Evidence: PMS incident_timeline events tied to the flagged account (Step 5)",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1078",
+      "score": 1,
+      "color": "",
+      "comment": "Use of compromised credentials | Evidence: Isolation Forest anomaly score on src_user session features (Step 3)",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1021",
+      "score": 1,
+      "color": "",
+      "comment": "Lateral movement, guest segment to PMS segment | Evidence: 190 cross-segment flows guest_wifi -> pms_segment on SMB/RDP ports (Step 8)",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1018",
+      "score": 1,
+      "color": "",
+      "comment": "Reconnaissance / distinct host access | Evidence: n_distinct_hosts feature per flagged user (Step 3)",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1210",
+      "score": 1,
+      "color": "",
+      "comment": "Reaching the payment environment | Evidence: Graph reachability pms_server -> payment_gateway (Step 6)",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#ff6666"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [],
+  "showTacticRowBackground": false,
+  "tacticRowBackground": "#dddddd",
+  "selectTechniquesAcrossTactics": true,
+  "selectSubtechniquesWithParent": false
+}

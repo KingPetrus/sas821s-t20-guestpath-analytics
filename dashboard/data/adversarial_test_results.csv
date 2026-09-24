@@ -1,0 +1,4 @@
+case,flagged,anomaly_score,percentile
+"Case 1 - Smash and grab (original pattern: high volume, RemoteInteractive, many hosts)",True,-0.1282547955836728,0.0
+"Case 2 - Low and slow (few events, normal logon type -- volume evasion attempt)",False,0.163464486355819,57.6271186440678
+"Case 3 - Mimicry (high volume but single target host, normal logon type)",True,-0.05691965423957723,1.694915254237288

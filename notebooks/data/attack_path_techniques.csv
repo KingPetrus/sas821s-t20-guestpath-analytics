@@ -1,0 +1,6 @@
+stage,technique_id,technique_name,evidence
+Initial access via helpdesk social engineering,T1566,Phishing (Vishing/Social Engineering),PMS incident_timeline events tied to the flagged account (Step 5)
+Use of compromised credentials,T1078,Valid Accounts,Isolation Forest anomaly score on src_user session features (Step 3)
+"Lateral movement, guest segment to PMS segment",T1021,Remote Services,185 cross-segment flows guest_wifi -> pms_segment on SMB/RDP ports (Step 8)
+Reconnaissance / distinct host access,T1018,Remote System Discovery,n_distinct_hosts feature per flagged user (Step 3)
+Reaching the payment environment,T1210,Exploitation of Remote Services,Graph reachability pms_server -> payment_gateway (Step 6)

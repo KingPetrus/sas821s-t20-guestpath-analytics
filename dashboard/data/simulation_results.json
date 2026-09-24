@@ -1,0 +1,8 @@
+{
+  "baseline_success_rate": 0.912,
+  "control_a_segmentation_success_rate": 0.5538,
+  "control_b_mfa_success_rate": 0.812,
+  "control_a_risk_reduction": 0.3927631578947369,
+  "control_b_risk_reduction": 0.10964912280701755,
+  "n_iterations": 5000
+}

@@ -1,0 +1,17 @@
+{
+  "flat_reachable_count": 5,
+  "segmented_reachable_count": 4,
+  "flat_reachable_nodes": [
+    "backup_file_server",
+    "domain_controller",
+    "payment_gateway",
+    "pms_server",
+    "staff_helpdesk"
+  ],
+  "segmented_reachable_nodes": [
+    "domain_controller",
+    "payment_gateway",
+    "pms_server",
+    "staff_helpdesk"
+  ]
+}
