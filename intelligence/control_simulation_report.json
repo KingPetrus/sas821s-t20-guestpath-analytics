@@ -1,0 +1,31 @@
+{
+    "total_techniques_evaluated": 5,
+    "adversarial_records_analyzed": 3,
+    "simulations": [
+        {
+            "technique_id": "T1566",
+            "vector": "Initial access via helpdesk social engineering | Evidence: PMS incident_timeline events tied to the flagged account (Step 5)",
+            "status": "Evaluated & Logged"
+        },
+        {
+            "technique_id": "T1078",
+            "vector": "Use of compromised credentials | Evidence: Isolation Forest anomaly score on src_user session features (Step 3)",
+            "status": "Evaluated & Logged"
+        },
+        {
+            "technique_id": "T1021",
+            "vector": "Lateral movement, guest segment to PMS segment | Evidence: 185 cross-segment flows guest_wifi -> pms_segment on SMB/RDP ports (Step 8)",
+            "status": "Evaluated & Logged"
+        },
+        {
+            "technique_id": "T1018",
+            "vector": "Reconnaissance / distinct host access | Evidence: n_distinct_hosts feature per flagged user (Step 3)",
+            "status": "Evaluated & Logged"
+        },
+        {
+            "technique_id": "T1210",
+            "vector": "Reaching the payment environment | Evidence: Graph reachability pms_server -> payment_gateway (Step 6)",
+            "status": "Evaluated & Logged"
+        }
+    ]
+}
