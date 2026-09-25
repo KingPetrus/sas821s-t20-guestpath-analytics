@@ -1,3 +1,42 @@
-notebooks/data/*.gz
-notebooks/data/*.zip
+# ============================================================
+# GuestPath Analytics - Git Ignore
+# ============================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Jupyter temporary files
+.ipynb_checkpoints/
 notebooks/.ipynb_checkpoints/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ============================================================
+# VERY LARGE RAW DATASETS
+# These remain on the local machine because they exceed
+# GitHub's normal per-file size limit.
+# ============================================================
+
+# LANL authentication dataset
+notebooks/data/auth.txt.gz
+
+# CICIDS2017 full archive
+notebooks/data/Network Intrusion dataset(CIC-IDS- 2017).zip
+
+# Full Enron dataset archive
+notebooks/data/The-Enron-Email-Dataset.zip
+
+# ============================================================
+# Project outputs and datasets BELOW this point are intentionally
+# NOT ignored so they can be shared with the project partner
+# and lecturer.
+# ============================================================
