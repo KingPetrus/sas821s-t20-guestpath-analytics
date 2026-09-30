@@ -4,7 +4,7 @@ SAS821S Capstone — Namibia University of Science and Technology
 
 - **Mfon Charten Petrus** (221017984)-  Data and Modelling Lead
 - **TJIRI NDJARAKANAi** (219067058 )- Security Engineering and Intelligence Lead
-- Lecturer: Prof. Atlee Gamundani
+- **Lecturer: Prof. Atlee Gamundani**
 
 ## What this project does
 
@@ -15,15 +15,72 @@ project charter, including problem statement, objectives, methods, and reference
 
 ## Repository structure
 
-```
+sas821s-clean/
+├── .agents/
+├── .git/
+├── artifacts/
+│   ├── enriched_pms_events.csv
+│   └── prioritized_risk_output.csv
+├── dashboard/
+│   ├── data/
+│   │   ├── adversarial_test_results.csv
+│   │   ├── attack_path_techniques.csv
+│   │   ├── attck_layer.json
+│   │   ├── composite_risk_score.json
+│   │   ├── incident_timeline.csv
+│   │   ├── segmentation_comparison.json
+│   │   ├── simulation_results.json
+│   │   ├── synthetic_pms_events.csv
+│   │   └── user_anomaly_scores.csv
+│   ├── app.py
+│   └── test_guestpath.py
+├── data/
 ├── docs/
-│   └── charter.docx              # Full project charter
+│   ├── SAS821S_MC_Petrus_221017984_T_Ndjarakana_... (.docx / .pdf files)
+│   └── ...
+├── intelligence/
+│   ├── behavioral_anomaly_scatter.png
+│   ├── control_simulation_report.json
+│   ├── mitre_ttp_distribution.png
+│   └── top_risky_users.png
+├── models/
+│   ├── phishing_rf_model.pkl
+│   └── tfidf_vectorizer.pkl
 ├── notebooks/
-│   └── 01_starter_pipeline.ipynb # Phase 0/1 starter: anomaly detection + segmentation simulation
-├── data/                          # Generated/downloaded data (gitignored — do not commit raw datasets)
-├── src/                           # Reusable pipeline code, factored out of notebooks as it matures
-├── dashboard/                     # Streamlit app (Phase 4)
-├── requirements.txt
+│   ├── .ipynb_checkpoints/
+│   ├── data/
+│   │   ├── .ipynb_checkpoints/
+│   │   ├── Network Intrusion dataset(CIC-IDS- 2017)/
+│   │   ├── synthetic/
+│   │   ├── The-Enron-Email-Dataset/
+│   │   ├── adversarial_test_results.csv
+│   │   ├── attack_path_techniques.csv
+│   │   ├── attck_layer.json
+│   │   ├── auth.txt.gz
+│   │   ├── composite_risk_score.json
+│   │   ├── incident_timeline.csv
+│   │   ├── nazario_phishing.mbox
+│   │   ├── Network Intrusion dataset(CIC-IDS- 2017).zip
+│   │   ├── phishing3.zip
+│   │   ├── redteam.txt.gz
+│   │   ├── segmentation_comparison.json
+│   │   ├── simulation_results.json
+│   │   ├── synthetic_payment_logs.csv
+│   │   ├── synthetic_pms_events.csv
+│   │   ├── synthetic_pms_logs.csv
+│   │   └── The-Enron-Email-Dataset.zip
+│   ├── intelligence/
+│   ├── sas821s-t20-guestpath-analytics/
+│   ├── 01_Phishing_Text_Mining_GuestPath.ipynb
+│   └── GuestPath_WITH_RESULTS.ipynb
+├── src/
+│   └── generate_pms_and_payment.py
+├── .gitignore
+├── check_real_data_usage.py
+├── check_real_data_usage_v2.py
+├── check_zips.py
+├── extract_real_data.py
+├── guestpath_security_analytics_and_intelligence.ipynb
 └── README.md
 ```
 
@@ -44,8 +101,8 @@ jupyter notebook notebooks/01_starter_pipeline.ipynb
 | 2. Data preparation & baseline EDA | Mfon | 24 Aug 2026 |
 | 3. Session/identity ML & UEBA anomaly modelling | Mfon | 14 Sep 2026 |
 | 4. Segmentation, lateral-movement & ATT&CK mapping | Tjiri | 14 Sep 2026 |
-| 5. Phishing text-mining, breach-risk modelling, simulation | Both | 12 Oct 2026 |
-| 6. Prototype dashboard, integration, final report | Both | TBD |
+| 5. Prototype dashboard, integration, final report | Both | 22 Sep 2026 |
+| 6. Phishing text-mining, breach-risk modelling, simulation | Both | 27 Sep 2026 |
 
 ## Branching convention
 
@@ -58,5 +115,4 @@ jupyter notebook notebooks/01_starter_pipeline.ipynb
 ## Data & ethics note
 
 No real hotel, guest, or payment data is used anywhere in this repository — see charter Section 6.
-All datasets are public (LANL, CICIDS2017, Enron, Nazario) or synthetically generated. Do not commit
-raw downloaded datasets to git; `data/` is git-ignored for this reason.
+All datasets are public (LANL, CICIDS2017, Enron, Nazario) or synthetically generated.
